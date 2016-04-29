@@ -285,6 +285,9 @@ metadata. Currently the supplied coderef is executed as:
     foreign_relname     => Old deprecated slot for rel_name
   });
 
+To specify join conditions that take different values on each query, use
+L<< DBIx::Class::ParameterizedJoinHack >>.
+
 =head3 attributes
 
 The L<standard ResultSet attributes|DBIx::Class::ResultSet/ATTRIBUTES> may
