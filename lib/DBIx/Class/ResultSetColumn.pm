@@ -18,6 +18,7 @@ use namespace::clean;
   $rs = $schema->resultset('CD')->search({ artist => 'Tool' });
   $rs_column = $rs->get_column('year');
   $max_year = $rs_column->max; #returns latest year
+  $count = $rs_column->func('COUNT') #runs an SQL function
 
 =head1 DESCRIPTION
 
